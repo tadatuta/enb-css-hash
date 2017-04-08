@@ -1,0 +1,16 @@
+parserOptions:
+  ecmaVersion: 6
+
+env:
+  node: true
+  es6: true
+
+globals:
+    describe: true
+    it: true
+    afterEach: true
+
+rules:
+  curly: [error, multi-line]
+
+extends: pedant

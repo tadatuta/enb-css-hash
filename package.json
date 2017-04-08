@@ -1,0 +1,41 @@
+{
+  "name": "enb-css-hash",
+  "version": "0.0.1",
+  "author": "Vladimir Grinenko <i@tadatuta.com>",
+  "description": "ENB tech to build a hash with entities as a key and CSS inlined as a value",
+  "main": "techs/css-hash.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tadatuta/enb-css-hash.git"
+  },
+  "homepage": "https://github.com/tadatuta/enb-css-hash",
+  "bugs": "https://github.com/tadatuta/enb-css-hash/issues",
+  "licenses": [
+    {
+      "type": "MPL-2.0",
+      "url": "https://github.com/tadatuta/enb-css-hash/blob/master/LICENSE.txt"
+    }
+  ],
+  "engines": {
+    "node": ">= 4"
+  },
+  "peerDependencies": {
+    "enb": ">= 0.16.0 <2.0.0"
+  },
+  "dependencies": {
+    "vow": "^0.4.15"
+  },
+  "devDependencies": {
+    "enb": "^1.5.1",
+    "eslint": "^3.19.0",
+    "eslint-config-pedant": "^0.8.0",
+    "mocha": "^3.2.0",
+    "mock-enb": "^0.3.6",
+    "mock-fs": "^4.2.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "unit": "mocha",
+    "test": "npm run lint && npm run unit"
+  }
+}
