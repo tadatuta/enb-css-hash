@@ -16,9 +16,7 @@ module.exports = require('enb').buildFlow.create()
                     var key = file.name.replace('.' + file.suffix, ''),
                         content = cssArray[idx];
 
-                    acc[key] ?
-                        acc[key].push(content) :
-                        acc[key] = [content];
+                    acc[key] ? acc[key] += content : acc[key] = content;
 
                     return acc;
                 }, {});
